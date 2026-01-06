@@ -1,0 +1,83 @@
+/* Conteneur principal */
+.App {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Titre */
+.App h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input et bouton d'ajout */
+.App input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.App button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.App button:hover {
+  background-color: #45a049;
+}
+
+/* Liste des tâches */
+.App ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.App li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Texte de la tâche */
+.App li span {
+  cursor: pointer;
+}
+
+/* Tâches complétées */
+.App li span.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Bouton supprimer */
+.App li button {
+  background-color: #e74c3c;
+  font-size: 14px;
+}
+
+.App li button:hover {
+  background-color: #c0392b;
+}
