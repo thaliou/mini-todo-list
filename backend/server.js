@@ -13,5 +13,7 @@ app.get("/api/status", (req,res) => res.json({ message:"Backend OK 🚀" }));
 
 app.use("/api/tasks", require("./routes/task.routes"));
 
+app.use("/api/auth", require("./routes/auth.routes"));
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log("Serveur lancé sur port", PORT));
